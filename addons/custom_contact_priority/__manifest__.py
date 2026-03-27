@@ -1,8 +1,9 @@
 {
-    'name': 'Customer Priority Level',
+    'name': 'Custom Contact Priority',
     'version': '1.0',
-    'category': 'Sales',
-    'depends': ['base'],
+    'category': 'Tools',
+    'summary': 'Add priority level to contacts',
+    'depends': ['base', 'contacts'],
     'data': [
         'views/res_partner_view.xml',
     ],
