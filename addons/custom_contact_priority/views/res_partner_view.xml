@@ -24,8 +24,8 @@
             </xpath>
         </field>
     </record>
-    <record id="view_res_partner_filter_inherit" model="ir.ui.view">
-        <field name="name">res.partner.select.inherit</field>
+   <record id="view_res_partner_filter_priority_custom" model="ir.ui.view">
+        <field name="name">res.partner.select.priority.custom</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
@@ -33,7 +33,7 @@
                 <field name="priority_level"/>
                 <separator/>
                 <filter string="High Priority" name="high_priority" domain="[('priority_level', '=', 'high')]"/>
-                <group expand="0" string="Group By">
+                <group string="Group By">
                     <filter string="Priority Level" name="group_by_priority" context="{'group_by': 'priority_level'}"/>
                 </group>
             </xpath>
